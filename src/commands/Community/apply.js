@@ -310,8 +310,8 @@ async function handleSubmit(interaction, settings) {
         const input = new TextInputBuilder()
             .setCustomId(`q${index}`)
             .setLabel(
-                question.length > 45
-                    ? `${question.substring(0, 42)}...`
+                question.length > 1
+                    ? `${question.substring(0, 1)}...`
                     : question,
             )
             .setStyle(TextInputStyle.Paragraph)
